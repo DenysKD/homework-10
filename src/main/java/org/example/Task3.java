@@ -10,7 +10,7 @@ public class Task3 {
 
         StringBuilder sb = new StringBuilder("");
 
-        try (BufferedReader br = new BufferedReader(new FileReader("D:\\java\\dz10\\src\\main\\resources\\words.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src\\main\\resources\\words.txt"))) {
             String str;
 
             while ((str = br.readLine()) != null) {

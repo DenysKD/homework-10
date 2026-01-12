@@ -16,7 +16,7 @@ public class Task2 {
 
         List<String> tmpUsersList = new ArrayList<>();
 
-        try(BufferedReader br = new BufferedReader(new FileReader("D:\\java\\dz10\\src\\main\\resources\\users.txt"));) {
+        try(BufferedReader br = new BufferedReader(new FileReader("src\\main\\resources\\users.txt"));) {
             String str;
 
             while ((str = br.readLine()) != null) {
@@ -35,7 +35,7 @@ public class Task2 {
                 usersList.add(new User(user[0], Integer.parseInt(user[1])));
         }
 
-        try(FileWriter writer = new FileWriter("D:\\java\\dz10\\src\\main\\resources\\user.json"))
+        try(FileWriter writer = new FileWriter("src\\main\\resources\\user.json"))
         {
             gsonBuilder.toJson(usersList, writer);
 

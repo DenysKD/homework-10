@@ -14,7 +14,7 @@ public class Task1 {
         List<String> validData = new ArrayList<>();
 
         try {
-            List<String> data = Files.readAllLines(Path.of("D:\\java\\dz10\\src\\main\\resources\\file.txt"));
+            List<String> data = Files.readAllLines(Path.of("src\\main\\resources\\file.txt"));
             for (String str : data) {
                 if (str.matches(patern))
                     validData.add(str);
@@ -23,7 +23,7 @@ public class Task1 {
             System.out.println(e.getMessage());
         }
 
-        //System.out.println(validData);
+        System.out.println(validData);
     }
 }
 
